@@ -1,0 +1,67 @@
+.editor {
+    background-color: #333;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+}
+
+.canvas {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+}
+
+.toolbar {
+    background-color: rgba(0, 0, 0, .5);
+    bottom: 1rem;
+    color: #fff;
+    height: 2rem;
+    left: 50%;
+    margin-left: -8rem;
+    position: absolute;
+    width: 18rem;
+    z-index: 2015;
+}
+
+.toolbar__button {
+    background-color: transparent;
+    border-width: 0;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    float: left;
+    font-size: 1rem;
+    height: 2rem;
+    text-align: center;
+    width: 2rem;
+}
+
+.navbar {
+    float: right;
+  }
+
+  .nav__button {
+    background-color: transparent;
+    border-width: 0;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    width: 3rem;
+  }
+
+  .nav--success:hover {
+    background-color: #2ecc40;
+  }
+
+  .nav--danger:hover {
+    background-color: #ff4136;
+  }
