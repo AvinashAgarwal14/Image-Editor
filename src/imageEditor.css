@@ -6,12 +6,13 @@
     right: 0;
     top: 0;
     height: 100%;
+    width: 100%;
 }
 
 .canvas {
     align-items: center;
     display: flex;
-    height: 100%;
+    height: 80%;
     width: 100%;
     justify-content: center;
 }
@@ -22,9 +23,9 @@
     color: #fff;
     height: 2rem;
     left: 50%;
-    margin-left: -8rem;
+    margin-left: -12em;
     position: absolute;
-    width: 18rem;
+    width: 24rem;
     z-index: 2015;
 }
 
@@ -35,33 +36,34 @@
     cursor: pointer;
     display: block;
     float: left;
-    font-size: 1rem;
+    font-size: 1.2rem;
     height: 2rem;
     text-align: center;
-    width: 2rem;
+    width: 3rem;
 }
 
 .navbar {
     float: right;
   }
 
-  .nav__button {
-    background-color: transparent;
-    border-width: 0;
-    color: #fff;
-    cursor: pointer;
-    display: block;
-    float: left;
-    height: 3rem;
-    line-height: 3rem;
-    text-align: center;
-    width: 3rem;
-  }
+.nav__button {
+  background-color: transparent;
+  border-width: 0;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  float: left;
+  height: 3rem;
+  line-height: 3rem;
+  text-align: center;
+  width: 3rem;
+  font-size: 1.2rem;
+}
 
-  .nav--success:hover {
-    background-color: #2ecc40;
-  }
+.nav--success:hover {
+  background-color: #2ecc40;
+}
 
-  .nav--danger:hover {
-    background-color: #ff4136;
-  }
+.nav--danger:hover {
+  background-color: #ff4136;
+}

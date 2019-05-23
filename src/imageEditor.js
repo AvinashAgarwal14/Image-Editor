@@ -231,6 +231,7 @@ class ImageEditor extends Component {
         <div className = 'editor'>
             <div className="navbar">
                 <nav className="nav">
+                    <button type="button" className="nav__button" title="Load" onClick={this.uplaodImage}><span className="fa fa-upload"></span></button>
                     {this.state.data.url!=='' && 
                     <a className="nav__button nav__button--success" title="Download" href= {this.state.data.url} download="edited_image.png"><span className="fa fa-download"></span></a> }
                     <button type="button" className="nav__button" data-action="restore" title="Undo (Ctrl + Z)" onClick={this.restore}><span className="fa fa-undo"></span></button>
@@ -244,7 +245,6 @@ class ImageEditor extends Component {
                 <img className="image" src= {this.state.data.url} style={{height:'80%'}}/>
             </div>
             <div className="toolbar">
-                <button className="toolbar__button" title="Load" onClick={this.uplaodImage}><span className="fa fa-upload"></span></button>
                 <button className="toolbar__button" data-action="move" title="Move (M)" onClick={this.editAction}><span className="fa fa-arrows"></span></button>
                 <button className="toolbar__button" data-action="crop" title="Crop (C)" onClick={this.editAction}><span className="fa fa-crop"></span></button>
                 <button className="toolbar__button" data-action="zoom-in" title="Zoom In (I)" onClick={this.editAction}><span className="fa fa-search-plus"></span></button>
